@@ -1,3 +1,7 @@
+git status   - pokazuje co sie zmienilo
+
+git log   - historia commitów
+
 git add <scieżka/nazwa_pliku>
 git add .   - dodaj wszystkie zmienione pliki
 
