@@ -1,0 +1,7 @@
+git add <scieżka/nazwa_pliku>
+git add .   - dodaj wszystkie zmienione pliki
+
+git commit
+git commit -m "opis commita"
+
+git push    -> wysyła zmiany do origin (serwer github)
