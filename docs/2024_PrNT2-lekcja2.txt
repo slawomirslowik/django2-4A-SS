@@ -19,6 +19,12 @@ IV. run app
 	> py manage.py runserver
 
 
+V. commit changes to origin
+inside git bash: 
+
+git add .
+git commit -m "commit message - describe what changed"
+git push
 
 
 
