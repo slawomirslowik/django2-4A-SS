@@ -1,0 +1,24 @@
+I. Virtual environment
+	Open cmd in repository folder
+   	> py -m venv <twoja_nazwa>
+
+	activate environment:
+	> twoja_nazwa\Scripts\activate.bat
+
+	(twoja_nazwa) should appear in cmd before command line
+
+II. install django package
+	> py -m pip install django --upgrade
+
+III. Create django project
+
+	> django-admin startproject mysite
+
+IV. run app
+	inside mysite folder
+	> py manage.py runserver
+
+
+
+
+

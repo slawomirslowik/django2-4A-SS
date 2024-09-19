@@ -6,4 +6,4 @@ ssh-keygen -> 3x enter (domyslnie, haslo niepiotrzebne)
 
 3. Z repozytorium kopiujemy link ssh (repo -> code/ssh)
 
-4. git remot set-url origin git@github.com:slawomirslowik/django-4c.git
+4. git remote set-url origin git@github.com:slawomirslowik/django-4c.git
