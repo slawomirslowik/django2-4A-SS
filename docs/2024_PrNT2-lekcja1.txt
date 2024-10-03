@@ -5,16 +5,19 @@ I. Windows
     3. Zainstaluj Visual Studio Code (system installer)
 
 II. Github
-    1. Stwórz konto na GitHubie (o ile nie masz)
-    2. Stwórz nowe repozytorium (public, ignore template: Python, MIT licence)
-	3. Wygeneruj na GitHubie personal access token (classic) i gdzies zapisz
-	   - Kliknij avatar > Settings > Developer settings > Personal access tokens > Tokens classic > Generate new token (classic) 
-	   - Expiration: Never , zaznacz Repo
-	lub dodaj klucz SSH (instrukcja w odrebnym pliku)
+    1. Stwórz konto na GitHubie (o ile nie masz) 
+    2. Stwórz nowe repozytorium (public, ignore template: Python, MIT licence) - zobacz 01.CREATE_REPOSITORY.jpg
+	3. Dodaj autentykację (2 opcje)
+	   -> v.1 Wygeneruj na GitHubie personal access token (classic) i gdzies zapisz
+	     - Kliknij avatar > Settings > Developer settings > Personal access tokens > Tokens classic > Generate new token (classic) 
+	     - Expiration: Never , zaznacz Repo
+	   -> lub v2 lub dodaj klucz SSH (instrukcja w odrebnym pliku)
 
 III. Projekt template
 	1. sklonuj projekt do folderu Dokumenty:
 	- eksplorator > rclick > open git bash
+	- git clone https://github.com/twojlogin/twojerepo.git   (adres do skopiowania na githubie) 
+	
+	(może byc wymagane skonfigurowanie użytkownika)
 	- git config --global user.name "Twoje Dane"
 	- git config --global user.email "Twoj@ema.il"
-	- git clone https://github.com/slawomirslowik/selenium-python-example.git

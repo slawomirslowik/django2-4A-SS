@@ -1,0 +1,41 @@
+Metody HTTP
+
+Co to jest HTTP?
+
+Hypertext Transfer Protocol (HTTP) jest przeznaczony do zapewnienia komunikacji między klientem a serwerem. Protokół HTTP jest użyteczny, ponieważ udostępnia znormalizowany sposób komunikowania się ze sobą. Określa on formę żądań klienta (tj. np.przeglądarki) dotyczących danych oraz formę odpowiedzi serwera na te żądania.
+
+Lista metod HTTP
+ 
+1      	GET	pobieranie danych
+2	POST	wysyłanie danych
+3	PUT	dodanie zasobu
+4	DELETE	skasowanie zasobu
+5  	HEAD	pobieranie metadanych na temat zapytania     
+6	OPTIONS	sprawdzenie udostępnionych metod
+7	TRACE	używane przy testowaniu połączeń
+8	CONNECT                   	stworzenie tunelu poprzez serwery proxy
+9	PATCH	aktualizacja części danych
+
+METODA GET
+Niniejsza metoda – GET jest to najprawdopodobnie najczęściej używaną metodą w sieci. Służy ona do pobierania zasobu z określonego adresu URL. 
+
+METODA POST
+Ta metoda służy do przesyłania żądań i wykonania jakiejś akcji w stosunku do konkretnego zasobu. Razem z żądaniem transmitowany jest obiekt w ustalonej reprezentacji.
+
+METODA PUT
+Metoda PUT służy do zachowania obiektu przekazywanego w treści zapytania pod wskazanym adresem URL. Gdy metoda PUT zakończy się powodzeniem, wykonanie metody GET dla tego samego adresu powinno zwrócić dokładnie ten sam obiekt jaki był użyty w PUT.
+
+METODA HEAD
+Kolejna metoda to HEAD działa tak samo jak metoda GET. Nie zwraca ona jednak treści wiadomości, a jedynie same nagłówki. Powinny one być identyczne z tymi, które są zwracane przez metodę GET o takich samych parametrach.
+
+METODA OPTIONS
+Jest to prośba o przesłanie informacji na temat dostępnych metod komunikacji dla danego zasobu. Możliwe jest także zapytanie o dostępne opcje samego serwera. Jednak z uwagi na to, że dostępne funkcjonalności są ściśle związane z zasobem, pytanie o możliwości serwera jest używane głównie jako ping do serwera. 
+
+METODA TRACE
+Metoda jest używana do zdalnego śledzenia wywołań wszelkich innych metod HTTP. Zapytanie to powinno odwzorowywać badaną wiadomość z wyłączeniem pewnych wrażliwych pól. 
+
+METODA CONNECT
+Za pomocą tego zapytania możemy połączyć się do serwera pośredniego w drodze do serwera docelowego. Jest to niezbędne, gdy np. dwa węzły nie są bezpośrednio ze sobą powiązane (w przypadku gdy istnieje zapora sieciowa). Wysyłając zapytanie CONNECT należy tylko przekazać docelowy adres, do którego chcemy się połączyć.
+
+METODA PATCH
+Nie jest ona wprawdzie częścią standardu HTTP, jednak dość dobrze uzupełnia go. W sytuacji, gdy potrzebujemy zaktualizować tylko kilka właściwości rekordu, zastosujemy metodę PATCH. 
