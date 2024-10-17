@@ -3,7 +3,7 @@ https://expose.pl/czym-jest-git-i-dlaczego-warto-znac-systemy-kontroli-wersji-ko
 
 https://git-scm.com/book/pl/v2/Pierwsze-kroki-Wprowadzenie-do-kontroli-wersji          <- obszerny opis
 
--- konfiguracja 
+-- konfiguracja
 
 git config --global user.name "Nazwa Użytkownika"
 git config --global user.email "email@uzytkowni.ka"
