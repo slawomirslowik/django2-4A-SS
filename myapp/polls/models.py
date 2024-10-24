@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime,timezone
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)

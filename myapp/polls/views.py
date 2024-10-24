@@ -2,8 +2,15 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Question,Choice
 from django.template import loader
+import logging
+
+logger = logging.getLogger(__name__)
 
 def index(request):
+    try:
+        num = 1/0
+    except:
+        logger.exception("message")
     latest_question_list = Question.objects.order_by("-pub_date")[:5]
     template = loader.get_template("polls/index.html")
     context = {
