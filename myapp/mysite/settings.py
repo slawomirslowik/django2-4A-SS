@@ -1,4 +1,5 @@
 from pathlib import Path
+from . import mysecrets
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -63,9 +64,16 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "mssql",
+        "NAME": "zsl2024",
+        "USER": mysecrets.USER_NAME,
+        "PASSWORD": mysecrets.USER_PASS,
+        "HOST": "zsl2024.mssql.somee.com",
+        "PORT": "1433",
+        "SCHEMA": "master",
+        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server",
+        },
     }
 }
 
